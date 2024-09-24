@@ -7,11 +7,11 @@ from UI.pages.base_page import BasePage
 class ItemPage(BasePage):
 
     def add_to_cart(self):
-        with allure.step():
+        with allure.step('adding to cart'):
             self.wait_for(bn_add_to_cart)
             self.click(bn_add_to_cart)
 
     def move_to_cart(self):
-        with allure.step():
+        with allure.step('go to cart'):
             self.wait_for(bn_move_to_cart)
             self.click(bn_move_to_cart)

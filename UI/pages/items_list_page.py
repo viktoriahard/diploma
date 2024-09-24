@@ -7,7 +7,7 @@ from UI.pages.base_page import BasePage
 class ItemsListPage(BasePage):
 
     def click_apple(self):
-        with allure.step():
+        with allure.step('choose from checkbox'):
             self.driver.execute_script("window.scrollTo(0, 400);")
             self.click(apple_box)
 
@@ -16,7 +16,7 @@ class ItemsListPage(BasePage):
         return self.wait_for(ipad_item)
 
     def click_item(self):
-        with allure.step():
+        with allure.step('choose an item'):
             action = ActionChains(self.driver)
             action.move_to_element(self.apple_list).perform()
             action.click().perform()

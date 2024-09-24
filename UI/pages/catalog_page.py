@@ -15,11 +15,11 @@ class CatalogPage(BasePage):
         return self.wait_for(bn_tablets)
 
     def click_bn_electronics(self):
-        with allure.step():
+        with allure.step('go to electronics section'):
             self.click(bn_electronics)
 
     def move_to_tablets(self):
-        with allure.step():
+        with allure.step('open tablets catalog'):
             action = ActionChains(self.driver)
             action.move_to_element(self.tablets).perform()
             action.move_to_element(self.tablets_list).perform()

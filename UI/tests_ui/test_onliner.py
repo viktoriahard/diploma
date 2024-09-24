@@ -9,7 +9,7 @@ class TestAddTabletToCart:
     @allure.title("Test Ipad")
     @allure.id("1")
     @allure.description("Choose an item and add it to cart")
-    @allure.feature("12345")
+    @allure.feature("Apple Ipad")
     @pytest.mark.smoke
     def test_ipad(self, main_page, catalog_page, items_list_page, item_page, cart_page):
         main_page.click_bn_catalog()

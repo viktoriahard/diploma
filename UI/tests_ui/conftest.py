@@ -1,7 +1,6 @@
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-
 from UI.pages.cart_page import CartPage
 from UI.pages.catalog_page import CatalogPage
 from UI.pages.item_page import ItemPage
